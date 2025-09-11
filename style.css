@@ -1,3 +1,4 @@
+/*  ######################### main page #################### */
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +10,7 @@ body{
     background-color: #101827;
     color: #FFFF;
     /* height: 100vh;   */
-    
+    background:linear-gradient( #101827, #1c2433 50%, #16213e);
 }
 
 /* .colors{
@@ -131,8 +132,32 @@ background: linear-gradient( #101827, #1c2433 50%, #16213e);
   align-items: center;
 }
 
+.contant-icon i{
+    font-size: 55px;
+    /* color: #376383 ; */
+    color: #384866 ;
+    border-radius: 10px;
+    padding: 0px 10px;
+    transition: transform 1s;
+}
+
+.contant-icon a i:hover{
+    color:#AB0606;
+    transform : translateY(-40px)
+}
+
+.contant-icon {
+    size: 500px;
+    /* border: 2px solid rgba(255, 255, 255, .1); */
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    padding: 35px;
+}
+
+
 .content{
-    margin: 10px;
+    margin: 12px;
     padding: 2px  
 
 }
@@ -146,31 +171,33 @@ background: linear-gradient( #101827, #1c2433 50%, #16213e);
 }
 
 
-/*  ###### about me ############ */
+/*  ######################### about me #################### */
 
 .boxes{
     display: flex;
     justify-content: space-between;
-    padding: 20px 2%; 
+    padding: 10px 2% 20px 2%; 
+    font-size: 25px;
 
 }
 
-.colum1{
+
+.box1{
     flex-basis: 50%;
     background:linear-gradient( #101827, #1c2433 50%, #16213e);
     border: 2px solid rgba(255, 255, 255, .1);
-    margin: 50px 10px;
+    margin: 0px 10px;
     width: 80%;
     height: 200px;
     align-items: center;
     border-radius: 15px;
     padding: 20px 5%;
 }
-.colum2{
+.box2{
     flex-basis: 50%;
     background:linear-gradient( #101827, #1c2433 50%, #16213e);
     border: 2px solid rgba(255, 255, 255, .1);
-    margin: 50px 10px;
+    margin: 0px 10px;  
     width: 80%;
     height: 200px;
     align-items: center;
@@ -178,7 +205,7 @@ background: linear-gradient( #101827, #1c2433 50%, #16213e);
     padding: 20px 5%;
 }
 
-.title{
+.pagetitle{
     font-size: 50px;
     color: #AB0606
 }
@@ -198,3 +225,49 @@ background: linear-gradient( #101827, #1c2433 50%, #16213e);
   line-height: 45px
 }
 
+#boxes-title{
+    display: flex;
+    justify-content:center;
+    padding: 50px 5px 5px;
+    align-items: center;
+    /* margin: 15px 10px ; */
+    width: 100%;
+    font-size: 35px;
+}
+
+.smallText{
+    font-size: 15px  
+    /* display: flex;
+    justify-content: center; */
+}
+
+.secondaryContentBox1{
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   margin: 20px 4px;
+   font-weight: 300;
+   color: #adadad;
+}
+
+.experience{
+    flex-basis: 50%;
+}
+
+.eduction{
+    flex-basis: 55%;  
+}
+
+.box1Content{
+    margin: 25px 5px ;
+    line-height: 40px;
+}
+
+.box2Content{
+    margin: 25px 5px ;
+}
+
+.secondary{
+    font-size: 20px;
+}
