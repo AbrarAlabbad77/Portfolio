@@ -6,29 +6,19 @@
     /* box-sizing: border-box; */
 }
 
+    /*  form stackoverflow */
+    .header{
+        position: fixed; 
+        width: 100%;     
+        z-index: 1000;   
+    }
+
 body{
     background-color: #101827;
-    color: #FFFF;
+    color:#D7E8FA;
     /* height: 100vh;   */
-    background:linear-gradient( #101827, #1c2433 50%, #16213e);
+    /* background:linear-gradient( #101827, #1c2433 50%, #16213e); */
 }
-
-/* .colors{
-    width: 300px;
-    height: 200;
-    background:radial-gradient( 40% 40% #D7E8F4);
-    transform: translate(50% 50%);
-    top: 30%;
-    left: 20% ;
-    position: absolute;
-    /* background: radial-gradient( circle at center, 
-    rgba(215, 232, 244, 0.4) 0%,   
-    rgba(215, 232, 244, 0.2) 30%,  
-    rgba(215, 232, 244, 0) 70%  );
-    order-radius: 50%; */
-     /* background:linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px),
-} */ 
-
 
 .container{
     padding: 20px 2%; 
@@ -104,25 +94,6 @@ background: linear-gradient( #101827, #1c2433 50%, #16213e);
   
 }
 
-
-/* 
-    overflow-x: hidden;
-    background-color: hsl(var(--background));
-    color: hsl(var(--foreground));
-    background: linear-gradient(135deg, #0a0a0a, #1a1a2e 50%, #16213e);
-    min-height: 100vh;
-}
-.glass, .glass-hover {
-    background: rgba(255, 255, 255, .05);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, .1);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, .3);
-}
-*/
-
-
-
 .parentBox{
   /* margin: 0; */
   /* padding: 0; */
@@ -134,21 +105,21 @@ background: linear-gradient( #101827, #1c2433 50%, #16213e);
 
 .contant-icon i{
     font-size: 55px;
-    /* color: #376383 ; */
     color: #384866 ;
     border-radius: 10px;
     padding: 0px 10px;
-    transition: transform 1s;
+    transition: transform 1s;  /*  from w3school  */
 }
 
+
 .contant-icon a i:hover{
-    color:#AB0606;
+    /* color:#AB0606; */
+    color: #a44242 ;
     transform : translateY(-40px)
 }
 
 .contant-icon {
     size: 500px;
-    /* border: 2px solid rgba(255, 255, 255, .1); */
     display: flex;
     justify-content: space-between;
     align-self: center;
@@ -178,7 +149,6 @@ background: linear-gradient( #101827, #1c2433 50%, #16213e);
     justify-content: space-between;
     padding: 10px 2% 20px 2%; 
     font-size: 25px;
-
 }
 
 
@@ -244,8 +214,8 @@ background: linear-gradient( #101827, #1c2433 50%, #16213e);
 .secondaryContentBox1{
    display: flex;
    justify-content: space-between;
-   flex-direction: row;
-   flex-wrap: nowrap;
+   /* flex-direction: row;
+   flex-wrap: nowrap; */
    margin: 20px 4px;
    font-weight: 300;
    color: #adadad;
@@ -268,6 +238,137 @@ background: linear-gradient( #101827, #1c2433 50%, #16213e);
     margin: 25px 5px ;
 }
 
-.secondary{
+.secondaryTextBox1{
     font-size: 20px;
 }
+
+.secondaryTextBox2{
+    font-size: 20px;
+    color: #adadad;
+    margin: 20px 4px;
+    line-height: 20px;
+}
+
+.buttonsResume{
+   display: flex;
+   justify-content: space-between;
+   gap: 10px;
+   
+}
+
+.downloadResume{
+flex: 1; 
+height: 50px;
+border-radius: 10px;
+margin-top: 10px;
+font-size: 18px;
+color: #ffffff;
+border: 1px solid ;
+background:linear-gradient(135deg,#494F5B,#a82e2e, #bd4848, #7b2424 ,#494F5B);
+border-color:rgba(255, 255, 255, .1);
+transition: transform 0.5s;
+}
+
+.downloadResume:hover{
+ transform:scale(1.05,1.05);
+}
+
+.viewResume{
+    height: 50px;
+    width: 60px;
+    color: #ffffff;
+    border-radius: 10px;
+    margin-top: 10px;
+    background:linear-gradient(135deg,#494F5B);
+    border-color:rgba(255, 255, 255, .1);
+}
+
+.viewResume:hover a i{
+ color: #a82e2e;
+}
+
+.viewResume a i{
+   font-size: 25px;
+}
+
+
+ /*  ######################### Tools  #################### */ 
+
+.pageToolstitle{
+    font-size: 30px;
+    /* color: #AB0606 */
+    color: #a44242 ; 
+    margin-top: 60px;
+}
+
+.tool-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px ;
+    display: flex;
+    gap: 20px;
+    /*  from w3 school */
+    animation: scroll 9s linear infinite;
+}
+
+.tool-icon i{
+    font-size: 70px;
+    color: #a44242 ;
+    border-radius: 10px;
+    padding: 0px 10px;
+}
+
+.card{
+    display: flex;
+    background:linear-gradient( #101827, #1c2433 50%, #16213e);
+    border: 2px solid rgba(255, 255, 255, .1);
+    margin: 0px 10px;
+    width: 30px;
+    height: 90px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 20px 5%;
+}
+
+.slider {
+  width: 100%;
+  /*  this line from stackoverflow */
+  overflow: hidden;
+  position: relative;
+   padding: 20px 50px;
+}
+
+/*  code from the w3school 
+  used to control animation ,, the place of element start of animation and the end of animation*/
+@keyframes scroll {
+  0% { transform: translateX(0); } 
+  100% { transform: translateX(-50%); }
+}
+
+/* عمل الماسك (الجدران يمين ويسار) */
+/* .slider::before,
+.slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  z-index: 2;
+  background: #101827;
+}
+
+.slider::before {
+  left: 0;
+  /* background: #101827; */
+/* }
+
+.slider::after {
+  right: 0;
+  background: #101827;
+} */ */
+
+
+
+
