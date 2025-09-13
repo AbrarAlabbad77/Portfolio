@@ -4,20 +4,26 @@
     padding: 0;
     font-family: 'Poppins' , sans-serif;
     /* box-sizing: border-box; */
+} 
+
+html{
+    scroll-behavior: smooth;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: 'Times New Roman', Times, serif;
 }
 
     /*  form stackoverflow */
-    .header{
-        position: fixed; 
-        width: 100%;     
-        z-index: 1000;   
-    }
+.header{
+position: fixed; 
+width: 100%;     
+z-index: 1000;   
+}
 
 body{
     background-color: #101827;
+    font-family: 'po';
     color:#D7E8FA;
-    /* height: 100vh;   */
-    /* background:linear-gradient( #101827, #1c2433 50%, #16213e); */
+
 }
 
 .container{
@@ -48,6 +54,7 @@ nav .box ul li a{
     width: 50px;
     color: #D7E8F4;  
     font-size: 18px;
+    text-decoration: none;  
 }
 
 nav .box ul li a::after{
@@ -70,22 +77,15 @@ nav .box ul li a:hover::after{
 border-radius: 15px;
 box-shadow: #D7E8F4;
 background: linear-gradient(#101827, #1c2433 50%, #16213e);
-/* max-width: 600px; */
-/* height: 50px; */
 justify-content: center; 
 padding: 10px;
 border: 2px solid rgba(255, 255, 255, .1);
-
-/* position: absolute;
-left: 50%;    
-top: 90%;
-transform: translate(-50%, -50%);  */
+ 
 
 }
 
 .mainBox{
 display: flex;
-/* margin: auto; */
 width: 50%;
 flex-direction: column;
 border-radius: 20px;
@@ -99,8 +99,6 @@ background: linear-gradient( #101827, #1c2433 50%, #16213e);
 }
 
 .parentBox{
-  /* margin: 0; */
-  /* padding: 0; */
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -117,7 +115,6 @@ background: linear-gradient( #101827, #1c2433 50%, #16213e);
 
 
 .contant-icon a i:hover{
-    /* color:#AB0606; */
     color: #a44242 ;
     transform : translateY(-40px)
 }
@@ -144,6 +141,7 @@ background: linear-gradient( #101827, #1c2433 50%, #16213e);
 .red {
     color: #AB0606
 }
+
 
 
 /*  ######################### about me #################### */
@@ -182,7 +180,8 @@ background: linear-gradient( #101827, #1c2433 50%, #16213e);
 
 .pagetitle{
     font-size: 50px;
-    color: #AB0606 ;
+    /* color: #AB0606 ; */
+    color: #a82e2e;
     margin-top: 60px;
 }
 
@@ -206,7 +205,6 @@ background: linear-gradient( #101827, #1c2433 50%, #16213e);
     justify-content:center;
     padding: 50px 5px 5px;
     align-items: center;
-    /* margin: 15px 10px ; */
     width: 100%;
     font-size: 35px;
 }
@@ -214,15 +212,11 @@ background: linear-gradient( #101827, #1c2433 50%, #16213e);
 .smallText{
     font-size: 15px  ;
     color: #adadad;
-    /* display: flex;
-    justify-content: center; */
 }
 
 .secondaryContentBox1{
    display: flex;
    justify-content: space-between;
-   /* flex-direction: row;
-   flex-wrap: nowrap; */
    margin: 20px 4px;
    font-weight: 300;
    color: #adadad;
@@ -274,14 +268,13 @@ border: 1px solid ;
 background: #a44242 ;
 border-color:rgba(255, 255, 255, .1);
 transition: transform 0.5s;
-
 display: inline-flex;      
-  align-items: center;        
-  justify-content: center;  
-   /* to remove the underline 
-   from w3school  */
-  text-decoration: none;      
-  cursor: pointer; 
+align-items: center;        
+justify-content: center;  
+ /* to remove the underline 
+ from w3school  */
+text-decoration: none;      
+cursor: pointer; 
 }
 
 .downloadResume:hover{
@@ -311,7 +304,6 @@ display: inline-flex;
 
 .pageToolstitle{
     font-size: 30px;
-    /* color: #AB0606 */
     color: #a44242 ; 
     margin-top: 60px;
 }
@@ -381,7 +373,7 @@ display: inline-flex;
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 100px;                      /* line position */
+  left: 100px;                  
   width: 2px;
   background: rgba(255,255,255,0.2);
 }
@@ -443,17 +435,6 @@ display: inline-flex;
    margin-top: 30px;
    margin-left: 10px;
 }
-/* 
-.smllBox{
-    border: 2px solid  #a44242;
-    background: #a49393;
-    border-radius: 20px;
-    width: 70px;
-    /* margin: 5px 5px;
-    font-size: 14px;
-    text-align: center;
-}
- */ 
 
  /*  ####################.  Project #################### */
 
@@ -464,7 +445,6 @@ display: inline-flex;
   align-items: center;
   gap: 30px ; 
   position: relative; 
-  /* left: 30px; */
  }
 
  .ninja, .HappyBit, .Tadark , .Durrh{ 
@@ -519,7 +499,7 @@ display: inline-flex;
 
  .ProjectTiltle{
     font-size: 30px;
-    font-family:'Times New Roman', Times, serif;
+    /* font-family:'Times New Roman', Times, serif; */
  }
 
  .box-image {
@@ -566,13 +546,8 @@ opacity: 1;
     transform: translateX(-15px) rotate(2deg);
  }
  .box-image {
-  /* position: absolute;
-  bottom: 0;
-  right: 0; */
   transition: transform 0.5s ease;
 }
-
-
 
  /*  ####################.  Content #################### */
 
@@ -582,7 +557,7 @@ opacity: 1;
  align-items: center;
  flex-direction: row;
  gap: 40px;
-
+ margin-top: 50px;
 }
 
 .AllconnectBoxes{
@@ -612,6 +587,7 @@ opacity: 1;
     height: 100px;
     background:linear-gradient( #101827, #1c2433 50%, #16213e);
     border: 2px solid rgba(255, 255, 255, .1);
+    text-decoration: none;
 
 }
 
@@ -634,6 +610,8 @@ opacity: 1;
   font-size: 20px;
 }
 
+
+
 .getInTouchTitle{
     padding: 20px;
     font-size: 40px;
@@ -642,24 +620,34 @@ opacity: 1;
 }
 
 .followMe{
-    margin-top: 0px;
-    margin-left: 25px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 50px;
     padding: 20px 10px 15px 10px;
     font-size: 25px;
 }
 
 .followMeIcon{
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: row;
-    margin-left: 55px;
-     padding: 0px 20px;
-     font-size: 30px;
+    gap: 15px;
      color: #384866 ;
      width: 30px;
      height: 35px;
+     font-size: 44px;
+     margin-top: 15px;
+     
 }
+
+.followMeIcon i{
+     transition: transform 1s;
+}
+.followMeIcon i:hover{
+     transform: scale(1.2,1.2);
+     color: #a44242;
+}
+
 
 .formBox{
     margin-right: 100px;
@@ -694,15 +682,45 @@ form input, form textarea{
 .sendMessageText i{
     color: #a82e2e;
     font-size: 30px;
+    transform: scaleX(-1);
 }
 
-i.flip-horizontal {
-  transform: scaleX(-1);
-}
 
 .message{
-    /* margin: 40px 0px; */
     font-size: 27px;
     color: #a44242;
-    /* padding: 15px; */
+}
+
+.submitButton{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 350px;
+height: 50px;
+border-radius: 10px;
+margin: 20px auto;
+font-size: 25px;
+color: #ffffff;
+border: 1px solid ;
+background: #a44242 ;
+border-color:rgba(255, 255, 255, .1);
+}
+
+ /*  ####################.  Copy right #################### */
+
+.copyRightBox{
+    display: flex;
+   justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    width: 80%;
+    height: 40px;
+    border-radius: 15px;
+    padding: 20px 5%;
+    background:linear-gradient( #101827, #1c2433 50%, #16213e);
+    border: 2px solid rgba(255, 255, 255, .1);
+}
+
+.copyRightName{
+    color: #a82e2e;
 }

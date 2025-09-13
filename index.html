@@ -19,11 +19,11 @@
                     <img src="./images/logo.png" class="'logo" width="200" height="50">
                     <div class="box">
                         <ul>
-                            <li><a herf='#'> Home</a></li>
-                            <li><a herf='#'> About me</a></li>
-                            <li><a herf='#'> Experince</a></li>
-                            <li><a herf='#'> Project</a></li>
-                            <li><a herf='#'> Content</a></li>
+                            <li><a href='#mainPage'> Home</a></li>
+                            <li><a href='#about-me'> About me</a></li>
+                            <li><a href='#Experince'> Experince</a></li>
+                            <li><a href='#Project'> Project</a></li>
+                            <li><a href='#ConnectPage'> Content</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -46,7 +46,7 @@
     </div>
 
     <!-- ######### about page #########  -->
-    <div class="about-me">
+    <div id="about-me">
         <div class="container">
             <div class="firstSection">
                 <div class="texts">
@@ -128,7 +128,7 @@
     </div>
 
     <!-- ############# Experince  ################  -->
-    <div class="Experince">
+    <div id="Experince">
         <div class="container">
             <div class="texts">
                 <div class="pagetitle">Experince</div>
@@ -229,8 +229,8 @@
         </div>
     </div>
 
-    <!-- ############# Experince  ################  -->
-    <div class="Experince">
+    <!-- ############# Project  ################  -->
+    <div id="Project">
         <div class="container">
             <div class="texts">
                 <div class="pagetitle">Project</div>
@@ -239,7 +239,7 @@
             <div class="allProjectBox">
                 <div class="Durrh">
                     <div class="icons">
-                        <i class="fa-solid fa-cart-plus iconBox"></i>
+                        <i class="fa-regular fa-gem iconBox"></i>
                         <a
                             href="https://www.behance.net/gallery/218881905/Happy-Bite-UI-UX-Case-Study-Food-delivery-App-IOS"><i
                                 #id="behanceIcon" class="fa-brands fa-behance  hiddenIcon"></i></a>
@@ -261,7 +261,7 @@
                 </div>
                 <div class="HappyBit">
                     <div class="icons">
-                        <i class="fa-solid fa-cart-plus iconBox"></i>
+                        <i class="fa-solid fa-burger iconBox"></i>
                         <a
                             href="https://www.behance.net/gallery/218881905/Happy-Bite-UI-UX-Case-Study-Food-delivery-App-IOS"><i
                                 #id="behanceIcon" class="fa-brands fa-behance  hiddenIcon"></i></a>
@@ -303,7 +303,7 @@
                 </div>
                 <div class="Tadark">
                     <div class="icons">
-                        <i class="fa-solid fa-cart-plus iconBox"></i>
+                        <i class="fa-solid fa-capsules iconBox"></i>
                         <a
                             href="https://www.behance.net/gallery/218881905/Happy-Bite-UI-UX-Case-Study-Food-delivery-App-IOS"><i
                                 #id="behanceIcon" class="fa-brands fa-behance  hiddenIcon"></i></a>
@@ -330,7 +330,7 @@
     </div>
 
     <!-- ############# Content   ################  -->
-    <div class="ConnectPage">
+    <div id="ConnectPage">
         <div class="container">
             <div class="texts">
                 <div class="pagetitle">Let's Connect</div>
@@ -341,7 +341,7 @@
                     <div class="getInTouch">
                         <p class="getInTouchTitle"> Get in Touch</p>
                         <div class="AllconnectBoxes">
-                            <div class="email">
+                            <!-- <div class="email">
                                 <div class="iconn">
                                     <i class="fa-solid fa-envelope boxx"></i>
                                 </div>
@@ -349,8 +349,19 @@
                                     <p calss="emailTitle">Email</p>
                                     <p>AbrarAlabbad192@outlook.com</p>
                                 </div>
-                            </div>
-                            <div class="phone">
+                            </div> -->
+
+                            <a href="mailto:AbrarAlabbad192@outlook.com" class="email">
+                                <div class="iconn">
+                                    <i class="fa-solid fa-envelope boxx"></i>
+                                </div>
+                                <div class="text">
+                                    <p class="emailTitle">Email</p>
+                                    <p>AbrarAlabbad192@outlook.com</p>
+                                </div>
+                            </a>
+
+                            <!-- <div class="phone">
                                 <div class="iconn">
                                     <i class="fa-solid fa-phone boxx"></i>
                                 </div>
@@ -358,7 +369,22 @@
                                     <p calss="emailTitle">Phone</p>
                                     <p>+966 536228772</p>
                                 </div>
-                            </div>
+                            </div> -->
+
+                            <a href="tel:+966536228772" class="phone">
+                                <div class="iconn">
+                                    <i class="fa-solid fa-phone boxx"></i>
+                                </div>
+                                <div class="text">
+                                    <p class="emailTitle">Phone</p>
+                                    <p>+966 536228772</p>
+                                </div>
+                            </a>
+
+
+
+
+
                             <div class="location">
                                 <div class="iconn">
                                     <!-- <i class="fa-solid fa-envelope boxx"></i> -->
@@ -372,7 +398,7 @@
                         </div>
                     </div>
                     <div class="followMe">
-                        <p class="followMe"> Follow Me</p>
+                        <p class="followMeTitle"> Follow Me</p>
                         <div class="followMeIcon">
                             <a href="https://www.behance.net/abraralabbad"><i
                                     class="fa-brands fa-square-behance"></i></a>
@@ -382,17 +408,20 @@
                         </div>
                     </div>
                 </div>
+                <!-- form cdoe taking from jamiewilson in github-->
                 <div class="form">
                     <div class="formBox">
-                        <form>
+                        <form name="submit-to-google-sheet">
                             <div class="sendMessageText">
                                 <i class="fa-regular fa-comment-dots"></i>
                                 <P class="message"> Send a message </P>
                             </div>
-                            
+
                             <input type="text" name="Name" placeholder="Your Name" required>
                             <input type="email" name="email" placeholder="Your Email" required>
-                            <textarea name="Message" row="10" placeholder="Your Message"> </textarea>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <!-- <textarea name="Message" row="20" placeholder="Your Message"> </textarea> -->
+
                             <button type="submit" class="submitButton"> Sumbit</button>
                         </form>
 
@@ -401,6 +430,31 @@
             </div>
         </div>
     </div>
+
+
+    <!-- ############# Footer   ################  -->
+    <div class="copyRightBox">
+        <div class="copyRight">
+            @ 2025 made with <i class="fa-solid fa-heart"></i> by <span class="copyRightName">Abrar Alabbad </span>
+        </div>
+    </div>
+
+
+
+    <!-- ############## for the form  ##################### -->
+    <!--  taking from  jamiewilson in github -->
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx8dkt62r-teBVoYxRTvlB1XDx7ZO8hsg_nxLMLhLMAjVJrIEPtGDjchCBHMDrQZD73Vw/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
 </body>
 
 </html>
