@@ -29,7 +29,7 @@ nav{
     align-items: center ; 
     justify-content: space-between; 
     flex-wrap: wrap;
-    position: absolute;
+    position: relative;
     width: 96%;  
 }
 
@@ -38,7 +38,7 @@ nav ul li {
     
     display: inline-block;
     /* list-style: none; */
-    margin: 10px 35px; 
+    margin: 10px 20px; 
     /* justify-content: center;   */
 }
 
@@ -75,12 +75,16 @@ background: linear-gradient(#101827, #1c2433 50%, #16213e);
 justify-content: center; 
 padding: 10px;
 border: 2px solid rgba(255, 255, 255, .1);
+
+/* position: absolute;
+left: 50%;    
+top: 90%;
+transform: translate(-50%, -50%);  */
+
 }
 
 .mainBox{
 display: flex;
-/* box-shadow: #D7E8F4; */
-/* background: #1c2433; */
 /* margin: auto; */
 width: 50%;
 flex-direction: column;
@@ -149,6 +153,7 @@ background: linear-gradient( #101827, #1c2433 50%, #16213e);
     justify-content: space-between;
     padding: 10px 2% 20px 2%; 
     font-size: 25px;
+    align-items: center;
 }
 
 
@@ -177,7 +182,8 @@ background: linear-gradient( #101827, #1c2433 50%, #16213e);
 
 .pagetitle{
     font-size: 50px;
-    color: #AB0606
+    color: #AB0606 ;
+    margin-top: 60px;
 }
 
 .texts{
@@ -206,7 +212,8 @@ background: linear-gradient( #101827, #1c2433 50%, #16213e);
 }
 
 .smallText{
-    font-size: 15px  
+    font-size: 15px  ;
+    color: #adadad;
     /* display: flex;
     justify-content: center; */
 }
@@ -337,7 +344,7 @@ transition: transform 0.5s;
   /*  this line from stackoverflow */
   overflow: hidden;
   position: relative;
-   padding: 20px 50px;
+  padding: 20px 50px;
 }
 
 /*  code from the w3school 
@@ -347,27 +354,169 @@ transition: transform 0.5s;
   100% { transform: translateX(-50%); }
 }
 
-/* عمل الماسك (الجدران يمين ويسار) */
-/* .slider::before,
-.slider::after {
+/*  ####################.  Experince1box #################### */
+
+.allExperinceBoxess{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px ; 
+  position: relative; 
+  left: 30px;
+}
+
+/* vertical line */
+/* copy from stackoverflow */
+.allExperinceBoxess::before {
   content: "";
   position: absolute;
   top: 0;
-  width: 80px;
-  height: 100%;
-  z-index: 2;
-  background: #101827;
+  bottom: 0;
+  left: 100px;                      /* line position */
+  width: 2px;
+  background: rgba(255,255,255,0.2);
 }
 
-.slider::before {
-  left: 0;
-  /* background: #101827; */
-/* }
+.Experince1box, .Experince2box, .Experince3box, .Experince4box{
+    width: 70%;
+    height: 200px;
+    border-radius: 15px;
+    padding: 30px 40px;
+    background:linear-gradient( #101827, #1c2433 50%, #16213e);
+    border: 2px solid rgba(255, 255, 255, .1);
+    line-height: 30px;
+    position: relative;
+    transition: transform 0.5s;
+}
 
-.slider::after {
-  right: 0;
-  background: #101827;
-} */ */
+/* dot for each experience */
+.Experince1box::before,
+.Experince2box::before,
+.Experince3box::before,
+.Experince4box::before {
+  content: "";
+  position: absolute;
+  left: -43px;                     
+  top: 30px;                    
+  width: 14px;
+  height: 14px;
+  background: #AB0606;
+  border-radius: 50%;
+  border: 2px solid #7b2424;
+}
+
+.Experince1box:hover,
+.Experince2box:hover,
+.Experince3box:hover,
+.Experince4box:hover{
+   transform: scale(1.07,1.07);
+}
+
+.title{
+    width: auto;
+    display: flex;
+    justify-content:flex-start;
+    /* gap: ; */
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+.date{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    flex-direction: row;
+}
+
+.secondSection{
+   color: #adadad;
+   margin-top: 30px;
+   margin-left: 10px;
+}
+/* 
+.smllBox{
+    border: 2px solid  #a44242;
+    background: #a49393;
+    border-radius: 20px;
+    width: 70px;
+    /* margin: 5px 5px;
+    font-size: 14px;
+    text-align: center;
+}
+ */ 
+
+ /*  ####################.  Project #################### */
+
+ .allProjectBox{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px ; 
+  position: relative; 
+  /* left: 30px; */
+ }
+
+ .ninja, .HappyBit{ 
+    position: relative;
+    overflow: hidden;
+    width: 70%;
+    height: 400px;
+    border-radius: 15px;
+    padding: 30px 40px;
+    background:linear-gradient( #101827, #1c2433 50%, #16213e);
+    border: 2px solid rgba(255, 255, 255, .1);
+ }
+
+ .icons{
+    display: flex;
+    justify-content: space-between;
+ }
+ .iconBox{
+    display: flex;
+    background:linear-gradient( #101827, #1c2433 50%, #16213e);
+    border: 2px solid rgba(255, 255, 255, .1);
+    margin: 0px 10px;
+    width: 30px;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 15px 15px;
+    margin-bottom: 40px;
+ }
+
+ .icons i{
+    font-size: 30px;
+ }
+
+ .ProjectTiltle{
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif;
+ }
+
+ .box-image {
+  position: absolute;
+  width: 470px;       
+  height: auto; 
+   /*  in order to prevents stretching */
+    /*  copy from stackOverflow */
+  object-fit: contain; 
+  bottom: -23px;
+  right: -7%;     
+  overflow: hidden;
+ 
+}
+.ProjectDescritption{
+    color: #adadad;
+   margin-top: 50px;
+   margin-left: 10px;
+    line-height: 35px;
+
+}
+
 
 
 
