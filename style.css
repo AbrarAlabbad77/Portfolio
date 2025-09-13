@@ -271,10 +271,17 @@ margin-top: 10px;
 font-size: 18px;
 color: #ffffff;
 border: 1px solid ;
-/* background:linear-gradient(135deg,#494F5B,#a82e2e, #bd4848, #7b2424 ,#494F5B); */
 background: #a44242 ;
 border-color:rgba(255, 255, 255, .1);
 transition: transform 0.5s;
+
+display: inline-flex;      
+  align-items: center;        
+  justify-content: center;  
+   /* to remove the underline 
+   from w3school  */
+  text-decoration: none;      
+  cursor: pointer; 
 }
 
 .downloadResume:hover{
@@ -569,10 +576,11 @@ opacity: 1;
 
  /*  ####################.  Content #################### */
 
-.allContent{
+.allConnect{
  display: flex;
- justify-items: center;
  justify-content: center;
+ align-items: center;
+ flex-direction: row;
  gap: 40px;
 
 }
@@ -634,9 +642,9 @@ opacity: 1;
 }
 
 .followMe{
-    margin-top: 10px;
-    margin-left: 50px;
-    padding: 30px;
+    margin-top: 0px;
+    margin-left: 25px;
+    padding: 20px 10px 15px 10px;
     font-size: 25px;
 }
 
@@ -645,12 +653,56 @@ opacity: 1;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap: 10px;
-    
+    margin-left: 55px;
      padding: 0px 20px;
      font-size: 30px;
      color: #384866 ;
      width: 30px;
      height: 35px;
-     margin-left: 50px;
+}
+
+.formBox{
+    margin-right: 100px;
+     width: 500px;
+    height: 550px;
+    align-items: center;
+    border-radius: 15px;
+    padding: 20px 5%;
+    background:linear-gradient( #101827, #1c2433 50%, #16213e);
+    border: 2px solid rgba(255, 255, 255, .1);
+}
+
+form input, form textarea{
+    width: 85%;
+    border: 0;
+    background: #101827;
+    padding: 15px;
+    margin: 15px 0px;
+    color: #adadad;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.sendMessageText{
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    flex-direction: row;
+     margin: 40px 0px;
+}
+
+.sendMessageText i{
+    color: #a82e2e;
+    font-size: 30px;
+}
+
+i.flip-horizontal {
+  transform: scaleX(-1);
+}
+
+.message{
+    /* margin: 40px 0px; */
+    font-size: 27px;
+    color: #a44242;
+    /* padding: 15px; */
 }

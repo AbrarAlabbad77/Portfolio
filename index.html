@@ -81,7 +81,9 @@
                             <P>Resume / CV </P>
                             <P class="secondaryTextBox2"> Download my professional resume </P>
                             <div class="buttonsResume">
-                                <button class="downloadResume"> <i class="fa-solid fa-download"></i> Donwload</button>
+                                <a href="./images/CV UI.pdf" class="downloadResume" download>
+                                    <i class="fa-solid fa-download"></i> Download
+                                </a>
                                 <button class="viewResume"><a href="./images/CV UI.pdf" target="_blank"><i
                                             class="fa-regular fa-eye"></i></a></button>
                             </div>
@@ -350,7 +352,7 @@
                             </div>
                             <div class="phone">
                                 <div class="iconn">
-                                    <i class="fa-solid fa-envelope boxx"></i>
+                                    <i class="fa-solid fa-phone boxx"></i>
                                 </div>
                                 <div class="text">
                                     <p calss="emailTitle">Phone</p>
@@ -359,7 +361,8 @@
                             </div>
                             <div class="location">
                                 <div class="iconn">
-                                    <i class="fa-solid fa-envelope boxx"></i>
+                                    <!-- <i class="fa-solid fa-envelope boxx"></i> -->
+                                    <i class="fa-solid fa-location-dot boxx"></i>
                                 </div>
                                 <div class="text">
                                     <p calss="emailTitle">Location</p>
@@ -367,6 +370,8 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="followMe">
                         <p class="followMe"> Follow Me</p>
                         <div class="followMeIcon">
                             <a href="https://www.behance.net/abraralabbad"><i
@@ -375,15 +380,24 @@
                                     class="fa-brands fa-linkedin"></i></a>
                             <a href="https://github.com/AbrarAlabbad77"><i class="fa-brands fa-square-github"></i></a>
                         </div>
-
                     </div>
-
-                    <div class="followMe">
-
-                    </div>
-
                 </div>
-                <div class="form"> </div>
+                <div class="form">
+                    <div class="formBox">
+                        <form>
+                            <div class="sendMessageText">
+                                <i class="fa-regular fa-comment-dots"></i>
+                                <P class="message"> Send a message </P>
+                            </div>
+                            
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" row="10" placeholder="Your Message"> </textarea>
+                            <button type="submit" class="submitButton"> Sumbit</button>
+                        </form>
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
