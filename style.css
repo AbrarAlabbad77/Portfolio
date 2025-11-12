@@ -877,9 +877,13 @@ form textarea {
 }
 
 
-/* ===================================================================== */
+/* ==========================================================================================
+======================================================================================================
+=================================================================================================================
+===========================================================================================================================
+=== */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
 
   #name {
     font-size: 30px;
@@ -887,48 +891,39 @@ form textarea {
 
   .content {
     font-size: 25px;
-  }
+  } */
 
   /* to hide nav bar list */
-  .box{
+  /* .box{
     display: none;
-  }
+  } */
 
 
-  .mainBox{
+  /* .mainBox{
 max-width: 90%;
-/* width: auto; */
- /* margin-left: 300px;  */
 height: auto;
 text-align: center;
-}
+} */
 
-  .parentBox{
+  /* .parentBox{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  /* width: auto; */
   width: 500px;
   margin-left: 100px;
   
 
-}
-
-/* .container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
 } */
 
-  /* social medai box */
-.contant-icon i {
-    font-size: 40px;
-    /* border-radius: 10px; */
-    padding: 0px 10px;
-  }
 
-  .contant-icon {
+  /* social medai box */
+/* .contant-icon i {
+    font-size: 40px;
+    padding: 0px 10px;
+  } */
+
+  /* .contant-icon {
     padding: 10px;
   }
 
@@ -937,11 +932,102 @@ text-align: center;
     }
 
 .logo {
-      width: 190px;
+      width: 170px;
       height: 50px;
-    }
+    } */
+
+/* #################################about me section  */
+  /* .firstSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    padding: 20px 10px;
+  } */
 
 
-
-
+  /* Center everything and adjust spacing */
+  /* .texts {
+    padding: 10px 20px;
+    text-align: center;
   }
+
+  .pagetitle {
+    font-size: 32px;
+    margin-top: 20px;
+  }
+
+  .parageaph {
+    font-size: 16px;
+    line-height: 28px;
+    margin: 10px 5px;
+  } */
+
+  /* Stack boxes vertically instead of side-by-side */
+  /* .boxes {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .box1,
+  .box2 {
+    width: 90%;
+    height: auto;
+    margin: 10px 0;
+    padding: 20px;
+  } */
+
+  /* Fix text sizing inside boxes */
+  /* .box1Content,
+  .box2Content {
+    margin: 10px 0;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .secondaryTextBox1,
+  .secondaryTextBox2 {
+    font-size: 16px;
+  } */
+
+  /* Buttons stack nicely */
+  /* .buttonsResume {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .downloadResume,
+  .viewResume {
+    width: 100%;
+    font-size: 16px;
+  } */
+
+  /* Adjust Education / Resume titles */
+  /* #boxes-title {
+    flex-direction: column;
+    font-size: 25px;
+    padding: 20px 0 10px;
+  }
+
+  .eduction,
+  .experience {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  #about-me{
+margin-left: 100px;
+  }
+
+} */
+
+
+
+
+
+  
