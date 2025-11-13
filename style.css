@@ -88,9 +88,9 @@ html {
 
 /*  ######################### main page #################### */
 
-.logo{
-  width:200px;
-  height:50px;
+.logo {
+  width: 200px;
+  height: 50px;
 }
 
 /*  form stackoverflow */
@@ -104,6 +104,7 @@ body {
   background: var(--background-color);
   font-family: 'po';
   color: var(--text-color);
+  align-items: center;
 
 }
 
@@ -237,6 +238,13 @@ nav .box ul li a:hover::after {
 
 /*  ######################### about me #################### */
 
+/* #about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  width: 100%;
+} */
 .boxes {
   display: flex;
   justify-content: space-between;
@@ -360,9 +368,7 @@ nav .box ul li a:hover::after {
   font-size: 18px;
   color: #ffffff;
   border: 1px solid;
-  /* background: #a44242 ; */
   background: var(---red3);
-  /* border-color:rgba(255, 255, 255, .1); */
   border-color: var(--border-color);
   transition: transform 0.5s;
   display: inline-flex;
@@ -384,14 +390,11 @@ nav .box ul li a:hover::after {
   color: #ffffff;
   border-radius: 10px;
   margin-top: 10px;
-  /* background:linear-gradient(135deg,#494F5B); #D9DEE8) */
   background: var(--background22);
-  /* border-color:rgba(255, 255, 255, .1); */
   border-color: var(--border-color);
 }
 
 .viewResume:hover a i {
-  /* color: #a82e2e; */
   color: var(--accent-color);
 }
 
@@ -574,8 +577,6 @@ nav .box ul li a:hover::after {
   height: 400px;
   border-radius: 15px;
   padding: 30px 40px;
-  /* background:linear-gradient( #101827, #1c2433 50%, #16213e);
-    border: 2px solid rgba(255, 255, 255, .1); */
   background: var(--bg-gradient);
   border: 2px solid var(--border-color);
   transition: transform 2s;
@@ -604,8 +605,6 @@ a:visited {
 
 .iconBox {
   display: flex;
-  /* background:linear-gradient( #101827, #1c2433 50%, #16213e);
-    border: 2px solid rgba(255, 255, 255, .1); */
   background: var(--bg-gradient);
   border: 2px solid var(--border-color);
   margin: 0px 10px;
@@ -624,7 +623,6 @@ a:visited {
 
 .ProjectTiltle {
   font-size: 30px;
-  /* font-family:'Times New Roman', Times, serif; */
 }
 
 .box-image {
@@ -715,8 +713,6 @@ a:visited {
   border-radius: 20px;
   width: 500px;
   height: 100px;
-  /* background:linear-gradient( #101827, #1c2433 50%, #16213e);
-    border: 2px solid rgba(255, 255, 255, .1); */
   background: var(--bg-gradient);
   border: 2px solid var(--border-color);
   text-decoration: none;
@@ -731,8 +727,6 @@ a:visited {
   align-items: center;
   border-radius: 15px;
   padding: 15px 15px;
-  /* background:linear-gradient( #101827, #1c2433 50%, #16213e);
-    border: 2px solid rgba(255, 255, 255, .1); */
   background: var(--bg-gradient);
   border: 2px solid var(--border-color);
 }
@@ -883,7 +877,7 @@ form textarea {
 ===========================================================================================================================
 === */
 
-/* @media (max-width: 768px) {
+@media (max-width: 500px) {
 
   #name {
     font-size: 30px;
@@ -891,81 +885,101 @@ form textarea {
 
   .content {
     font-size: 25px;
-  } */
+  }
+
+  */
 
   /* to hide nav bar list */
-  /* .box{
+  .box {
     display: none;
-  } */
+  }
 
 
-  /* .mainBox{
-max-width: 90%;
-height: auto;
-text-align: center;
-} */
+  .mainBox {
+    max-width: 90%;
+    height: auto;
+    text-align: center;
+    margin-top: 200px;
+  }
 
-  /* .parentBox{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 500px;
-  margin-left: 100px;
-  
-
-} */
+  .parentBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 500px;
+    margin-left: 100px;
+  }
 
 
   /* social medai box */
-/* .contant-icon i {
+  .contant-icon i {
     font-size: 40px;
     padding: 0px 10px;
-  } */
+  }
 
-  /* .contant-icon {
+  .contant-icon {
     padding: 10px;
   }
 
-.header {
-      padding: 10px 15px;
-    }
+  .header {
+    padding: 10px 15px;
+  }
 
-.logo {
-      width: 170px;
-      height: 50px;
-    } */
+  .logo {
+    width: 170px;
+    height: 50px;
+  }
 
-/* #################################about me section  */
-  /* .firstSection {
+  /* #################################about me section  */
+  .firstSection {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; 
-    padding: 20px 10px;
-  } */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* min-height: 100vh;  */
+  }
 
+  #about-me {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-left: 40%;
+    min-height: 100vh;
+  }
+
+  #aboutme-title {
+    margin-left: 0%;
+  }
+
+  #aboutme-parageaph {
+    margin-left: 0%;
+
+  }
 
   /* Center everything and adjust spacing */
-  /* .texts {
+  .texts {
     padding: 10px 20px;
     text-align: center;
   }
 
   .pagetitle {
     font-size: 32px;
-    margin-top: 20px;
+    margin-top: 0px;
+    margin-left: auto;
+    align-items: center;
   }
 
   .parageaph {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 28px;
-    margin: 10px 5px;
-  } */
+    margin-left: auto;
+    /* margin: 20px 5px; */
+    width: 150%;
+  }
 
   /* Stack boxes vertically instead of side-by-side */
-  /* .boxes {
+  .boxes {
     flex-direction: column;
     align-items: center;
     gap: 20px;
@@ -974,60 +988,153 @@ text-align: center;
 
   .box1,
   .box2 {
-    width: 90%;
+    width: 150%;
     height: auto;
     margin: 10px 0;
     padding: 20px;
-  } */
+  }
 
   /* Fix text sizing inside boxes */
-  /* .box1Content,
+  .box1Content,
   .box2Content {
     margin: 10px 0;
     line-height: 30px;
     text-align: center;
   }
 
-  .secondaryTextBox1,
-  .secondaryTextBox2 {
-    font-size: 16px;
-  } */
+  #boxes-title {
+    gap: 120px;
+    margin-left: -50px;
+  }
 
-  /* Buttons stack nicely */
-  /* .buttonsResume {
-    flex-direction: column;
+  /* =================================tools=========================== */
+
+  .tools {
+    display: flex;
     align-items: center;
-    gap: 10px;
+    justify-items: center;
   }
 
-  .downloadResume,
-  .viewResume {
-    width: 100%;
-    font-size: 16px;
-  } */
+  .pageToolstitle {
+    margin-top: 5px;
+    margin-left: -100px;
+  }
 
-  /* Adjust Education / Resume titles */
-  /* #boxes-title {
-    flex-direction: column;
+  #tool-parageaph {
+    margin-left: -50px;
+  }
+
+
+  /* ==============================Experince=========================================== */
+
+  .allExperinceBoxess {
+    left: 30px;
+    margin-left: 40%;
+    width: 80%;
+  }
+
+  /* vertical line */
+  /* copy from stackoverflow */
+  .allExperinceBoxess::before {
+    left: -145px;
+    /* width: 2px; */
+  }
+
+  .Experince1box,
+  .Experince2box,
+  .Experince3box,
+  .Experince4box {
+    width: 150%;
+    height: auto;
+  }
+
+  /* dot for each experience */
+  .Experince1box::before,
+  .Experince2box::before,
+  .Experince3box::before,
+  .Experince4box::before {
+    left: -30px;
+  }
+
+  .Experince1box:hover,
+  .Experince2box:hover,
+  .Experince3box:hover,
+  .Experince4box:hover {
+    transform: scale(1.07, 1.07);
+  }
+
+  .title {
+    font-size: 14px;
+    /* width: auto; */
+  }
+
+  .date {
+    width: auto;
+    gap: 20px;
+  }
+
+  .smallText {
+    font-size: 10px;
+  }
+
+  .secondSection {
+    color: var(--textGray);
+    margin-top: 30px;
+    margin-left: 10px;
+    font-size: 14px;
+
+  }
+
+  /* ==================================Project ===================================================== */
+
+
+  .allProjectBox {
+    margin-left: 60%;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .ninja,
+  .HappyBit,
+  .Tadark,
+  .Durrh {
+    width: 500px;
+    height: auto;
+    margin-left: 20px;
+  }
+
+
+  a,
+  a:visited {
+    color: inherit;
+  }
+
+
+  .iconBox {
+    margin-bottom: 20px;
+  }
+
+  .icons i {
     font-size: 25px;
-    padding: 20px 0 10px;
   }
 
-  .eduction,
-  .experience {
-    flex-basis: 100%;
-    text-align: center;
-    margin-bottom: 10px;
+  .ProjectTiltle {
+    font-size: 20px;
   }
 
-  #about-me{
-margin-left: 100px;
+  .box-image {
+    width: 300px;
+    height: auto;
+
   }
 
-} */
+  .ProjectDescritption {
+    margin-top: 20px;
+    margin-left: 0px;
+    line-height: 25px;
+  }
 
 
-
-
-
-  
+}
