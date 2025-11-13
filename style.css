@@ -495,11 +495,10 @@ nav .box ul li a:hover::after {
 .Experince3box,
 .Experince4box {
   width: 70%;
-  height: 200px;
+  /* height: 200px; */
+  height: auto;
   border-radius: 15px;
   padding: 30px 40px;
-  /* background:linear-gradient( #101827, #1c2433 50%, #16213e);
-    border: 2px solid rgba(255, 255, 255, .1); */
   background: var(--bg-gradient);
   border: 2px solid var(--border-color);
   line-height: 30px;
