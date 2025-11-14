@@ -233,6 +233,10 @@ nav .box ul li a:hover::after {
   /* color: #AB0606; */
   color: var(--red2)
 }
+.hamburger {
+    display: none; /* hidden on large screens */
+
+}
 
 
 
@@ -407,7 +411,6 @@ nav .box ul li a:hover::after {
 
 .pageToolstitle {
   font-size: 30px;
-  /* color: #a44242 ;  */
   color: var(---red3);
   margin-top: 60px;
 }
@@ -433,8 +436,6 @@ nav .box ul li a:hover::after {
 
 .card {
   display: flex;
-  /* background:linear-gradient( #101827, #1c2433 50%, #16213e);
-    border: 2px solid rgba(255, 255, 255, .1); */
   background: var(--bg-gradient);
   border: 2px solid var(--border-color);
   margin: 0px 10px;
@@ -517,10 +518,8 @@ nav .box ul li a:hover::after {
   top: 30px;
   width: 14px;
   height: 14px;
-  /* background: #AB0606; */
   background: var(--red2);
   border-radius: 50%;
-  /* border: 2px solid #7b2424; */
   border: 2px solid var(--gorBorder);
 }
 
@@ -549,7 +548,6 @@ nav .box ul li a:hover::after {
 }
 
 .secondSection {
-  /* color: #adadad; */
   color: var(--textGray);
   margin-top: 30px;
   margin-left: 10px;
@@ -576,7 +574,6 @@ nav .box ul li a:hover::after {
   position: relative;
   overflow: hidden;
   width: 70%;
-  /* height: 400px; */
   height: auto;
   border-radius: 15px;
   padding: 30px 40px;
@@ -659,7 +656,6 @@ a:visited {
 }
 
 .ProjectDescritption {
-  /* color: #adadad; */
   color: var(--textGray);
   margin-top: 50px;
   margin-left: 10px;
@@ -722,10 +718,7 @@ a:visited {
 
 .AllconnectBoxes a:hover,
 .AllconnectBoxes .location:hover {
-    /* background-color: #e0e0e0; */
-    /* transform: translateY(-5px);  */
     transform: scale(1.07, 1.07);
-    /* box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); */
 }
 
 

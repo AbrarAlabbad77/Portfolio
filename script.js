@@ -19,6 +19,5 @@ toggleBtn.addEventListener("click", () => {
 });
 
 
-
 }
 document.addEventListener('DOMContentLoaded', init)
