@@ -566,6 +566,9 @@ nav .box ul li a:hover::after {
   position: relative;
 }
 
+
+.healthcare,
+.workwize,
 .ninja,
 .HappyBit,
 .Tadark,
@@ -573,7 +576,8 @@ nav .box ul li a:hover::after {
   position: relative;
   overflow: hidden;
   width: 70%;
-  height: 400px;
+  /* height: 400px; */
+  height: auto;
   border-radius: 15px;
   padding: 30px 40px;
   background: var(--bg-gradient);
@@ -581,6 +585,8 @@ nav .box ul li a:hover::after {
   transition: transform 2s;
 }
 
+.healthcare:hover,
+.workwize:hover,
 .ninja:hover,
 .Durrh:hover,
 .Tadark:hover,
@@ -625,7 +631,8 @@ a:visited {
 }
 
 .box-image {
-  position: absolute;
+  /* position: absolute; */
+  position: static;
   width: 470px;
   height: auto;
   /*  in order to prevents stretching */
@@ -634,7 +641,21 @@ a:visited {
   bottom: -23px;
   right: -7%;
   overflow: hidden;
+  transition: transform 0.5s ease;
 
+}
+
+.splitbox{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap :20px;
+}
+
+.laptop{
+  bottom: 30px;
+  right: 1%;
+  overflow:visible;
 }
 
 .ProjectDescritption {
@@ -643,6 +664,7 @@ a:visited {
   margin-top: 50px;
   margin-left: 10px;
   line-height: 35px;
+  flex-basis: 70%;
 
 }
 
@@ -656,6 +678,8 @@ a:visited {
   transform: scale(1.09, 1.09);
 }
 
+.healthcare:hover .hiddenIcon,
+.workwize:hover .hiddenIcon,
 .ninja:hover .hiddenIcon,
 .Durrh:hover .hiddenIcon,
 .Tadark:hover .hiddenIcon,
@@ -663,6 +687,8 @@ a:visited {
   opacity: 1;
 }
 
+.healthcare:hover .box-image,
+.workwize:hover .box-image,
 .ninja:hover .box-image,
 .Tadark:hover .box-image,
 .Durrh:hover .box-image,
@@ -670,9 +696,9 @@ a:visited {
   transform: translateX(-15px) rotate(2deg);
 }
 
-.box-image {
+/* .box-image {
   transition: transform 0.5s ease;
-}
+} */
 
 /*  ####################.  Content #################### */
 
@@ -1086,9 +1112,11 @@ form textarea {
     left: 30px;
     margin-left: 70%;
     width: 100%;
-    
+
   }
 
+  .healthcare,
+  .workwize,
   .ninja,
   .HappyBit,
   .Tadark,
@@ -1096,7 +1124,7 @@ form textarea {
     width: 500px;
     height: auto;
     margin-left: 20px;
-     width: 200%;
+    width: 200%;
   }
 
 
@@ -1130,42 +1158,42 @@ form textarea {
     line-height: 25px;
   }
 
-/*  ####################.  Content #################### */
+  /*  ####################.  Content #################### */
 
-#ConnectPage{
-     left: 30px;
+  #ConnectPage {
+    left: 30px;
     margin-left: 70%;
     width: 100%;
-}
+  }
 
 
-/*  the box */
-.email,
-.location,
-.phone {
-  width: 400px;
-  height: 100px;
+  /*  the box */
+  .email,
+  .location,
+  .phone {
+    width: 400px;
+    height: 100px;
 
-}
+  }
 
-.email .iconn i,
-.location .icon i,
-.phone .icon i {
-  font-size: 20px;
-}
+  .email .iconn i,
+  .location .icon i,
+  .phone .icon i {
+    font-size: 20px;
+  }
 
-.formBox {
-  width: 400px;
-  height: 550px;
-}
+  .formBox {
+    width: 400px;
+    height: 550px;
+  }
 
-/*  ####################.  Copy right #################### */
+  /*  ####################.  Copy right #################### */
 
-.copyRightBox {
-  margin: 40px auto;
-  width: 200%;
-  height: 40px;
+  .copyRightBox {
+    margin: 40px auto;
+    width: 200%;
+    height: 40px;
 
-}
+  }
 
 }
