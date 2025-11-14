@@ -720,6 +720,15 @@ a:visited {
   gap: 20px;
 }
 
+.AllconnectBoxes a:hover,
+.AllconnectBoxes .location:hover {
+    /* background-color: #e0e0e0; */
+    /* transform: translateY(-5px);  */
+    transform: scale(1.07, 1.07);
+    /* box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); */
+}
+
+
 /* text whinin the box */
 .text {
   display: flex;
@@ -790,6 +799,7 @@ a:visited {
   height: 35px;
   font-size: 44px;
   margin-top: 15px;
+  transition: transform 0.3s ease, color 0.3s ease;
 
 }
 
@@ -802,6 +812,10 @@ a:visited {
   color: var(---red3);
 }
 
+.followMeIcon a:hover {
+    color: #0077b5; 
+    transform: scale(1.2); 
+}
 
 .formBox {
   margin-right: 100px;
@@ -861,6 +875,7 @@ form textarea {
   border-color: var(--border-color);
 
 }
+
 
 /*  ####################.  Copy right #################### */
 
